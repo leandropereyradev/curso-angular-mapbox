@@ -17,7 +17,7 @@ const routes: Routes = [
         component: FullScreenPageComponent,
       },
       {
-        path: 'zoom-rage',
+        path: 'zoom-range',
         component: ZoomPageComponent,
       },
       {
