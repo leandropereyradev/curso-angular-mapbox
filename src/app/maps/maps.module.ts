@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import * as mapboxgl from 'mapbox-gl';
+import { environments } from 'src/environments/environments';
+(mapboxgl as any).accessToken = environments.mapbox_key;
+
 import { MapsRoutingModule } from './maps-routing.module';
 import { MiniMapComponent } from './components/mini-map/mini-map.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
@@ -18,7 +22,7 @@ import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
     FullScreenPageComponent,
     MarkersPageComponent,
     PropertiesPageComponent,
-    ZoomPageComponent
+    ZoomPageComponent,
   ],
   imports: [CommonModule, MapsRoutingModule],
 })
