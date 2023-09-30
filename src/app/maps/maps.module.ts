@@ -14,6 +14,8 @@ import { MarkersPageComponent } from './pages/markers-page/markers-page.componen
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
 import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
 
+import { CounterAloneComponent } from '../alone/components/counter-alone/counter-alone.component';
+
 @NgModule({
   declarations: [
     MiniMapComponent,
@@ -24,6 +26,6 @@ import { ZoomPageComponent } from './pages/zoom-page/zoom-page.component';
     PropertiesPageComponent,
     ZoomPageComponent,
   ],
-  imports: [CommonModule, MapsRoutingModule],
+  imports: [CommonModule, MapsRoutingModule, CounterAloneComponent],
 })
 export class MapsModule {}
